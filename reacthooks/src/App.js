@@ -1,20 +1,20 @@
 import React,{ useState } from 'react'
 import './App.css'
+import Basicfrom from './components/forms/basicfrom';
+import useStateArray from './components/useStateArray'
 
 export const App = () => {
 const [myName,setmyName]=useState('Srinath');
   
-  const changeName=()=> {
-    let val = myName;
-    ( val==='Srinath') ? setmyName('Masadi Srinath') :setmyName("Srinath");
-    
-  }
+  // 
   
   return (
     
-    <div className='div'>
-      <h1>{myName}</h1>
-      <button className='btn' onClick={changeName}>Click Me</button>
+    <div >
+
+      <useStateArray/>
+      <Basicfrom/>
+      
     </div>
     
   )
