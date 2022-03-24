@@ -7,7 +7,7 @@ const Basicfrom = () => {
 
            <div>
                 <label htmlFor='email'>Email:</label>
-                <input type="text" name="email" id="email"></input>
+                <input type="text" name="email" id="email" value="email"></input>
            </div>
 
            <div>
